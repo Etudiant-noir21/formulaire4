@@ -1,0 +1,146 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 30px;
+    flex-wrap: wrap;
+    border: 1px solid;
+    margin-top: 30px;
+   padding: 10px;
+}    
+.formulaire{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+}
+.form-righ{
+    display: flex;
+    flex-direction: column;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+ 
+}
+progress{
+    position: relative;
+    height: 5px;
+}
+progress::after{
+    content: '<500>';
+    color: aliceblue;
+    background-color: chartreuse;
+    position: absolute;
+    top: -0.3rem;
+    left: 10rem;
+     right: 0;
+     width: 2.5rem;
+}
+input{
+    padding: 5px;
+}
+.form-righ input{
+    padding: 6px;
+}
+.bar-donate{
+    margin-top: 3rem;
+}
+#donate{
+    width: 100%;
+}
+.button{
+    margin: 20px;
+    margin-left: 20rem;
+    padding: 5px;
+}
+progress[value='40']{
+    accent-color: rgb(44, 223, 88);
+}
+input[type='radio']{
+    accent-color: rgb(44, 223, 88);
+}
+.submit{
+    padding: 5px;
+    background-color: rgb(44, 223, 88);
+    border-radius: 5px;
+    border: 1px solid rgb(44, 223, 88);
+    color: aliceblue;
+}
+.reset{
+    padding: 5px;
+    border: 1px solid rgb(44, 223, 88);
+    border-radius: 5px;
+}
+h3{
+    position: relative;
+    right: 9.5em;
+    top: 10em;
+    color: azure;
+}
+.lastname{
+    border: 1px solid red;
+    
+}
+/* .lastname::before{
+    content:url(erreur.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+.form-left img{
+    height: 7px;
+    width: 2rem;
+    position: relative;
+    top: -1rem;
+    left: 8.5rem;
+    
+}
+.firstname{
+    border: 1px solid green;
+}
+@media screen and (max-width:900px){
+    *{
+        box-sizing: border-box;
+    }
+    form{
+        width: 100%;
+        border: 0;
+    }
+    /* .formulaire{
+        flex: 1 1 auto;
+    } */
+    .form-left{
+        width: 100%;
+    }
+    .form-righ{
+        width: 100%;
+    }
+    form img{
+        width: 100%;
+    }
+    .button{
+        text-align: center;
+    }
+    .form-left img{
+        display: none;
+    }
+}

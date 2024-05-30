@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    
+    
+    <form action="traitement par mail" method="post">
+      <img src="avatar2.jpg" alt="">
+      
+      <section>
+              <h3>REGISTRE NOW</h3>
+              <div class="formulaire">
+                <article class="form-left">
+                  <label for="name">FIRST NAME</label>
+                  <input type="text" id="name" name="first name" required class="firstname">
+                  <label for=" name">LAST NAME</label>
+                    <input type="text" name="last name" id="name"  required class="lastname"> <img src="erreur.png" alt="">
+                   
+                  <label for="company">COMPANY</label>
+                  <input type="text" name="company" id="company">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="mail" id="email" required>
+                  <label for="number">PHONE NUMBER</label>
+                  <input type="number" name="phone number" id="number" required>
+                </article>
+               
+               <article class="form-righ">
+                <label for="meal">MEAL PREFERENCE</label> 
+                <input type="text" name="meal" id="meal">
+                <label for="payement">PAYEMENT MODE</label>
+                <div class="radio">
+                  <input type="radio" name="payement" id="cash" value="cash" class="payement" checked>
+                  <label for="payement" class="lp">cash</label>
+                  <input type="radio" name="payement" id="cheque" value="cheque" class="payement">
+                  <label for="payement" class="lp">cheque</label>
+                  <input type="radio" name="payement" id="demand draft" value="demand draft" class="payement">
+                  <label for="payement" class="lp">Demand Draft</label>
+                </div>
+                  
+              
+                <label for="cheque">DD/CHEQUE NO.</label>
+                <input type="day" name="cheque" id="cheque">
+                <label for="drawn">DRAWN (BANK NAME)</label>
+                <input type="text" name="drawn" id="drawn">
+                <label for="payableat">PAYABLEAT</label>
+                <input type="text" name="payableat" id="payableat">
+              
+               </article>
+              </div>
+              
+               
+              <article class="bar-donate">
+                <div class="bar">
+                  <label for="progress">Donnate us</label>
+                  <progress id="donate" value="40" max="100"></progress>
+               </div>
+               <div class="button">
+                 <button class="submit">submit</button>
+                 <button class="reset">reset</button>
+               </div>
+              </article> 
+            </section>        
+     </form>
+  </body>
+</html>
